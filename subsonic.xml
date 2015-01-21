@@ -31,12 +31,7 @@
     <Data>
         <Volume>
             <HostDir></HostDir>
-            <ContainerDir>/opt/subsonic</ContainerDir>
-            <Mode>rw</Mode>
-        </Volume>
-        <Volume>
-            <HostDir></HostDir>
-            <ContainerDir>/config</ContainerDir>
+            <ContainerDir>/data</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
     </Data>
