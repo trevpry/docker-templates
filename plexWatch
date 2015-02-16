@@ -1,0 +1,35 @@
+<Container>
+    <Name>plexWatch</Name>
+    <Description>
+        plexWatch Docker</Description>
+    <Registry>https://registry.hub.docker.com/u/esvinson/plexwatch/</Registry>
+    <Repository>esvinson/plexwatch</Repository>
+    <BindTime>true</BindTime>
+    <Privileged>true</Privileged>
+    <Networking>
+        <Mode>bridge</Mode>
+        <Publish>
+            <Port>
+                <HostPort>8082</HostPort>
+                <ContainerPort>8082</ContainerPort>
+                <Protocol>tcp</Protocol>
+            </Port>
+        </Publish>
+    </Networking>
+    <Environment>
+        <Variable>
+            <Name></Name>
+            <Value></Value>
+        </Variable>
+    </Environment>
+    <Data>
+        <Volume>
+            <HostDir></HostDir>
+            <ContainerDir>/data</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+    </Data>
+    <WebUI>http://[IP]:[PORT]</WebUI>
+    <Banner>http://i.imgur.com/MAY6pir.png</Banner>
+    <Icon>http://i.imgur.com/rqpofWj.png</Icon>
+</Container>
